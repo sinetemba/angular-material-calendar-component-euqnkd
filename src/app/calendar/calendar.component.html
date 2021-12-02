@@ -1,0 +1,9 @@
+<div class="calendar-wrapper">
+  <mat-calendar #calendar (monthSelected)="monthSelected($event)" [(selected)]="selectedDate"
+    (selectedChange)="dateChanged()"></mat-calendar>
+</div>
+
+
+<button (click)="changeDate()">Tomorrow</button>
+
+{{selectedDate}}
